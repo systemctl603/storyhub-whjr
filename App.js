@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import WriteStory from "./screens/WriteStory";
 import ReadStory from "./screens/ReadStory";
+import AuthScreen from "./screens/AuthScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
+        <Tab.Screen name="Login Screen" component={AuthScreen} />
         <Tab.Screen name="Write Story" component={WriteStory} />
         <Tab.Screen name="Read Story" component={ReadStory} />
       </Tab.Navigator>

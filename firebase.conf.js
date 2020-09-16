@@ -7,6 +7,7 @@ const firebaseConfig = {
   storageBucket: "story-hub-fd6b4.appspot.com",
   messagingSenderId: "854282000549",
   appId: "1:854282000549:web:f6c34736ca40bea3fdd54c",
-}
+};
 firebase.initializeApp(firebaseConfig);
 export const db = firebase.firestore();
+export const auth = firebase.auth();
